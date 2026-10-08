@@ -10,22 +10,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header id="header" class="header">
+  <header class="header">
     <div class="container">
       <h1 class="martel-sans-bold">Decode Travel Credit Cards</h1>
       <nav class="site-nav">
-        <a href="#worth-it">Is It Worth It?</a>
+        <a href="#intro">Is It Worth It?</a>
         <a href="#basics">Basics</a>
         <a href="#compare">Card Comparison</a>
-        <a href="#my-process">How to Choose</a>
+        <a href="#steps">How to Choose</a>
         <a href="#calculator">Calculator</a>
-        <a href="#takeaway">Conclusion</a>
+        <a href="#conclusion">Conclusion</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="worth-it" class="content">
+    <section id="intro" class="content">
       <h2>Is the Annual Fee Worth It?</h2>
       <p>
         Premium travel credit cards often involve hundreds of dollars in credits, 
@@ -41,9 +41,7 @@
         so you can run the same comparison with your own spending habits.
       </p>
       <figure class="photo">
-        <img src="travel-photo.jpg"
-          alt="Cathay Pacific A330-300 business class seat."
-          width="960" height="720">
+        <img src="travel-photo.jpg" alt="Cathay Pacific A330-300 business class seat.">
       </figure>
     </section>
 
@@ -82,14 +80,14 @@
       <table class="card-table">
         <thead>
           <tr>
-            <th scope="col">Card</th>
-            <th scope="col">Annual fee</th>
-            <th scope="col">Points Multipliers</th>
+            <th>Card</th>
+            <th>Annual fee</th>
+            <th>Points Multipliers</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Chase Sapphire Preferred</th>
+            <th>Chase Sapphire Preferred</th>
             <td>$95</td>
             <td>
               5x on Chase Travel bookings; 
@@ -99,7 +97,7 @@
             </td>
           </tr>
           <tr>
-            <th scope="row">American Express Gold</th>
+            <th>American Express Gold</th>
             <td>$325</td>
             <td>
               5x on prepaid hotel on Amex Travel;
@@ -109,7 +107,7 @@
             </td>
           </tr>
           <tr>
-            <th scope="row">Citi Strata Premier</th>
+            <th>Citi Strata Premier</th>
             <td>$95</td>
             <td>
               10x on hotels, car rentals, attractions booked on Citi Travel; 
@@ -191,7 +189,7 @@
       </ul>
     </section>
 
-    <section id="my-process" class="content">
+    <section id="steps" class="content">
       <h2>How to Compare Them</h2>
       <ol class="steps">
         <li>Start with the annual fee. If you think it's too high, just don't get it.</li>
@@ -208,18 +206,18 @@
       <form id="form" class="form">
         <div class="form-row">
           <label for="annual-fee">Annual fee ($)</label>
-          <input type="number" id="annual-fee" name="annualFee" inputmode="numeric" min="0" required>
+          <input type="number" id="annual-fee" min="0" required>
         </div>
         <div class="form-row">
           <label for="credit-value">Credits you would actually use ($)</label>
-          <input type="number" id="credit-value" name="creditValue" inputmode="numeric" min="0" required>
+          <input type="number" id="credit-value" min="0" required>
         </div>
         <button type="submit" class="calc-button">Calculate</button>
       </form>
       <p id="result" class="result"></p>
     </section>
 
-    <section id="takeaway" class="content">
+    <section id="conclusion" class="content">
       <h2>Conclusion</h2>
       <p>
         Whether or not a card is worth it to you is personal. 
@@ -238,12 +236,6 @@
     </section>
 
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p><a href="#top">Back to top</a></p>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
